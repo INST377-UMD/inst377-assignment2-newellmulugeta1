@@ -1,0 +1,53 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #333;
+  padding: 10px 0;
+}
+nav ul li {
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: yellow;
+}
+main {
+  padding: 20px;
+}
+#voiceCommands {
+  margin-top: 50px;
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: #007acc;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #005f99;
+}
+.carousel-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
