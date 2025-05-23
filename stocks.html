@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stocks Page</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Stock Analyzer</h1>
+    <nav>
+      <ul>
+        <li onclick="navigateTo('index')">Home</li>
+        <li onclick="navigateTo('stocks')">Stocks</li>
+        <li onclick="navigateTo('dogs')">Dogs</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <input type="text" id="ticker" placeholder="Enter Stock Ticker"/>
+    <select id="days">
+      <option value="30">30 Days</option>
+      <option value="60">60 Days</option>
+      <option value="90">90 Days</option>
+    </select>
+    <button onclick="getStockData()">Get Stock Data</button>
+    <canvas id="stockChart"></canvas>
+    <table id="redditStocks"></table>
+  </main>
+  <div id="voiceCommands">
+    <p>Say "Lookup AAPL" to search for Apple stock</p>
+    <button onclick="annyang.start()">Turn On Voice</button>
+    <button onclick="annyang.abort()">Turn Off Voice</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="stocks.js"></script>
+</body>
+</html>
